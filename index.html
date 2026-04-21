@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rams &amp; Trees</title>
+  <style>
+    :root {
+      --forest-dark:    #1a2b0f;
+      --forest-deep:    #2d4a1e;
+      --forest-mid:     #3e6b2a;
+      --moss:           #4a6741;
+      --bark:           #3b2a1a;
+      --earth:          #5c4033;
+      --lichen:         #8a9e6a;
+      --cream:          #f0ebe0;
+      --parchment:      #d9d0bb;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--forest-dark);
+      color: var(--cream);
+      font-family: Georgia, 'Times New Roman', serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* ── top bark-textured band ── */
+    header {
+      width: 100%;
+      background: linear-gradient(180deg, var(--bark) 0%, var(--forest-dark) 100%);
+      border-bottom: 3px solid var(--forest-mid);
+      padding: 2rem 1rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: clamp(2rem, 6vw, 4rem);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--lichen);
+      text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    }
+
+    header p.tagline {
+      margin-top: 0.4rem;
+      font-size: clamp(0.85rem, 2vw, 1.1rem);
+      letter-spacing: 0.25em;
+      color: var(--parchment);
+      opacity: 0.75;
+    }
+
+    /* ── logo area ── */
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+      gap: 2.5rem;
+    }
+
+    .logo-wrap {
+      position: relative;
+      display: inline-block;
+    }
+
+    .logo-wrap::before {
+      content: '';
+      position: absolute;
+      inset: -18px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(62,107,42,0.25) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .logo-wrap img {
+      width: clamp(220px, 50vw, 480px);
+      height: auto;
+      filter: drop-shadow(0 4px 24px rgba(0,0,0,0.8))
+              drop-shadow(0 0 40px rgba(74,103,65,0.4));
+      display: block;
+    }
+
+    /* ── description card ── */
+    .card {
+      max-width: 560px;
+      background: rgba(45, 74, 30, 0.35);
+      border: 1px solid var(--moss);
+      border-radius: 8px;
+      padding: 1.6rem 2rem;
+      text-align: center;
+      line-height: 1.7;
+      color: var(--parchment);
+      font-size: 1.05rem;
+      backdrop-filter: blur(4px);
+    }
+
+    /* ── footer ── */
+    footer {
+      width: 100%;
+      border-top: 2px solid var(--forest-deep);
+      background: var(--bark);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      color: var(--lichen);
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Rams &amp; Trees</h1>
+    <p class="tagline">rooted in the wild</p>
+  </header>
+
+  <main>
+    <div class="logo-wrap">
+      <img
+        src="https://github.com/user-attachments/assets/d173b2f1-8ad4-4ad5-8315-fe746fdb94c1"
+        alt="Ram with tree-branch antlers – Rams & Trees logo"
+      />
+    </div>
+
+    <div class="card">
+      Where ancient horns meet towering branches — a symbol of strength,
+      patience, and the quiet power of the forest.
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 Rams &amp; Trees
+  </footer>
+
+</body>
+</html>
