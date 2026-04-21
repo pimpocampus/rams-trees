@@ -4,4 +4,4 @@
 
 > *Where ancient horns meet towering branches.*
 
-A forest-themed project. Open `index.html` in a browser to see the full page with the logo and foresty colour palette.
+A forest-themed project. Open `index.html` in a browser to see the full page with the logo and forest colour palette.
